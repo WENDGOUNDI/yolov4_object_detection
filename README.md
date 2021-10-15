@@ -1,47 +1,20 @@
 # Yolov4-opencv-python
 
-Yolov4 object detection using opencv python, its simplest way to run inference on yolo V4
+Implementation of OpenCV for object detection using one stage detector model, yolo-v4. 
+Object detection can be done in two ways: by using one stage detector model like Yolo models family or two stage detector model. the difference between these two detection models is the detection speed and accuracy. Two stage model use a preliminary stage to detect region of interest before classification. One stage detector, working without this preliminary step make them suitable for real time object detection.
 
-## YoloV4 objector Demo Video
 
-https://user-images.githubusercontent.com/66181793/122593546-41e6c980-d07f-11eb-8e18-bcc63d550183.mp4
+## Results
 
----
+### Detection on image
+After the detection is done on the image, we display the detected objects labels and their number
+![detection_on_image](https://user-images.githubusercontent.com/48753146/137457380-7ea8341f-fc84-4178-8136-ee223dc53a54.jpg)
+![Capture](https://user-images.githubusercontent.com/48753146/137461201-9e0cfddd-a852-49e7-9554-c05fc700eac0.JPG)
 
-Implementation detail available on [_**Darknet**_](https://github.com/pjreddie/darknet)
 
-All the Frozen-Inference graph (pre-trained network) available on Darknet
+### Detection on video (To display the result, we coverted the video into gif format)
+![video_detection_gif](https://user-images.githubusercontent.com/48753146/137457868-4e9608c9-01f0-4ddb-8e56-dd45e1433018.gif)
 
----
+# Requirements
+Install pandas, opencv and time.
 
-## TODO
-
-- [x] [**YoloV4 object detector with opencv-python implementation**](https://youtu.be/1aL6tewfxFY)
-
-- [ ] I will create distance estimation using yolo object detection, its coming up soon In sha Allah 😊
-
-## Installation
-
-You Need [**Opencv Contrib**](https://pypi.org/project/opencv-contrib-python/)
-
---> **windows**
-
-`pip install opencv-contrib-python`
-
---> **Linux or Mac**
-
-`pip3 install opencv-contrib-python`
-
-### Clone this repo
-
-`git clone https://github.com/Asadullah-Dal17/yolov4-opencv-python`
-
-Guess what you are done that was not hard, isn't it.😉
-
-I have use tiny weights, check out more on [_Darknet_](https://github.com/pjreddie/darknet) github for more
-
-Check out my Complete Video Tutorial on Yolov4 object detection YouTube [**Video Tutorial**](https://youtu.be/1aL6tewfxFY)
-
-check out my Youtube channel, I have ton of content available on my youtube channel regarding computer vision, [AiPhle](https://youtube.come/c/aiphle).
-
-thank you so much,
